@@ -1,0 +1,295 @@
+[
+  {
+    "id": "law-111761",
+    "category": "law",
+    "subType": "법률",
+    "title": "해양경찰청 소속 경찰공무원 복제에 관한 규칙",
+    "shortTitle": "해양경찰청 소속 경찰공무원 복제에 관한 규칙",
+    "enforceDate": "2024. 10. 21.",
+    "promulgationNo": "해양수산부령 제696호",
+    "promulgationDate": "",
+    "department": "해양경찰청 (장비관리과), 032-835-2276",
+    "revisionType": "일부개정",
+    "originalFile": "1793169111759_해양경찰청 소속 경찰공무원 복제에 관한 규칙(해양수산부령)(제00696호)(20241021).pdf",
+    "description": "",
+    "chapters": [
+      {
+        "chapterTitle": "제1장 총칙",
+        "articles": [
+          {
+            "articleNo": "제1조",
+            "title": "목적",
+            "content": "해양경찰청 소속 경찰공무원 복제에 관한 규칙에 관한 제반 사항을 규정함을 목적으로 한다."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "law-001",
+    "category": "law",
+    "subType": "대통령령",
+    "title": "해양경비법 시행령",
+    "shortTitle": "국유림법 시행령 스타일 참조",
+    "enforceDate": "2026. 10. 27.",
+    "promulgationNo": "대통령령 제36794호",
+    "promulgationDate": "2026. 10. 27.",
+    "department": "해양경찰청 (경비과), 032-835-2151",
+    "revisionType": "일부개정",
+    "originalFile": "해양경비법_시행령_전문.pdf",
+    "description": "해양경비법에서 위임된 사항과 그 시행에 필요한 사항을 규정함을 목적으로 한다.",
+    "chapters": [
+      {
+        "chapterTitle": "제1장 총칙",
+        "articles": [
+          {
+            "articleNo": "제1조",
+            "title": "목적",
+            "content": "이 영은 「해양경비법」에서 위임된 사항과 그 시행에 필요한 사항을 규정함을 목적으로 한다."
+          },
+          {
+            "articleNo": "제2조",
+            "title": "경비수역의 구분 등",
+            "content": "① 「해양경비법」(이하 \"법\"이라 한다) 제2조제1호에 따른 경비수역은 다음 각 호의 수역으로 구분한다.\n1. 내수(「영해 및 접속수역법」 제2조에 따른 내수를 말한다)\n2. 영해(「영해 및 접속수역법」 제1조 및 제2조에 따른 영해를 말한다)\n3. 접속수역(「영해 및 접속수역법」 제3조의2에 따른 접속수역을 말한다)\n4. 배타적 경제수역(「배타적 경제수역 및 대륙붕법」 제2조에 따른 배타적 경제수역을 말한다)"
+          }
+        ]
+      },
+      {
+        "chapterTitle": "제2장 해양경비활동",
+        "articles": [
+          {
+            "articleNo": "제3조",
+            "title": "해양경비계획의 수립 및 시행",
+            "content": "① 해양경찰청장은 법 제5조제1항에 따라 매년 해양경비의 기본방향 및 주요 시책이 포함된 해양경비기본계획을 수립·시행하여야 한다.\n② 지방해양경찰청장 및 해양경찰서장은 기본계획에 따라 관할 해역의 특성을 고려한 집행계획을 수립하여야 한다."
+          },
+          {
+            "articleNo": "제4조",
+            "title": "선박 등의 나포 및 인계",
+            "content": "① 해양경찰관은 법 제8조에 따라 선박 등을 나포한 때에는 지체 없이 그 사실을 소속 해양경찰서장에게 보고하여야 한다.\n② 해양경찰서장은 나포한 선박 등을 가장 가까운 지정 항만 또는 부두로 압송하여 조사하여야 한다."
+          },
+          {
+            "articleNo": "제5조",
+            "title": "무기 및 장구의 사용기준",
+            "content": "① 해양경찰관은 해양경비 및 범죄진압을 위하여 필요한 최소한의 범위에서 무기 또는 경찰장구를 사용할 수 있다.\n② 무기를 사용할 수 있는 구체적인 요건과 보고 절차는 해양경찰청장이 정한다."
+          }
+        ]
+      },
+      {
+        "chapterTitle": "부칙",
+        "articles": [
+          {
+            "articleNo": "부칙 제1조",
+            "title": "시행일",
+            "content": "이 영은 2026년 10월 27일부터 시행한다."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "law-002",
+    "category": "law",
+    "subType": "법률",
+    "title": "해양경비법",
+    "shortTitle": "해양경비법",
+    "enforceDate": "2026. 05. 01.",
+    "promulgationNo": "법률 제20145호",
+    "promulgationDate": "2025. 11. 01.",
+    "department": "해양경찰청 (경비과), 032-835-2151",
+    "revisionType": "일부개정",
+    "originalFile": "해양경비법_법률.pdf",
+    "description": "해양에서의 치안 유지 및 해양안전 확보를 위한 경비활동의 기준을 규정한다.",
+    "chapters": [
+      {
+        "chapterTitle": "제1장 총칙",
+        "articles": [
+          {
+            "articleNo": "제1조",
+            "title": "목적",
+            "content": "이 법은 해양에서의 경찰활동에 관한 기본원칙과 절차를 규정함으로써 해양주권을 수호하고 국민의 생명과 재산을 보호함을 목적으로 한다."
+          },
+          {
+            "articleNo": "제2조",
+            "title": "정의",
+            "content": "이 법에서 사용하는 용어의 뜻은 다음과 같다.\n1. \"경비수역\"이란 대한민국의 주권 또는 관할권이 미치는 수역을 말한다.\n2. \"해양경찰관\"이란 해양경찰청과 그 소속기관에서 근무하는 경찰공무원을 말한다."
+          }
+        ]
+      },
+      {
+        "chapterTitle": "제2장 해양경찰의 권한",
+        "articles": [
+          {
+            "articleNo": "제3조",
+            "title": "해양경찰관의 직무 범위",
+            "content": "해양경찰관은 해상에서의 범죄예방, 진압 및 수사, 경비, 작전, 대간첩작전, 수색 및 구조 활동을 수행한다."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "law-003",
+    "category": "law",
+    "subType": "대통령령",
+    "title": "해양경찰청과 그 소속기관 직제",
+    "shortTitle": "해경직제",
+    "enforceDate": "2026. 01. 01.",
+    "promulgationNo": "대통령령 제35800호",
+    "promulgationDate": "2025. 12. 30.",
+    "department": "해양경찰청 (기획재정담당관), 032-835-2211",
+    "revisionType": "타법개정",
+    "originalFile": "해양경찰청_직제.pdf",
+    "description": "해양경찰청과 그 소속기관의 조직 및 직무범위, 정원 등을 규정한다.",
+    "chapters": [
+      {
+        "chapterTitle": "제1장 총칙",
+        "articles": [
+          {
+            "articleNo": "제1조",
+            "title": "직무",
+            "content": "해양경찰청은 해양에서의 경찰 및 오염방제에 관한 사무를 관장한다."
+          },
+          {
+            "articleNo": "제2조",
+            "title": "소속기관",
+            "content": "해양경찰청장의 관장사무를 지원하기 위하여 해양경찰교육원, 중앙해양특수구조단 및 지방해양경찰청을 둔다."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "law-004",
+    "category": "law",
+    "subType": "법률",
+    "title": "수상레저안전법",
+    "shortTitle": "수상레저법",
+    "enforceDate": "2026. 06. 15.",
+    "promulgationNo": "법률 제19920호",
+    "promulgationDate": "2025. 12. 14.",
+    "department": "해양경찰청 (해양안전과), 032-835-2342",
+    "revisionType": "일부개정",
+    "originalFile": "수상레저안전법.pdf",
+    "description": "수상레저활동의 안전을 확보하고 건전한 수상레저문화를 조성하기 위한 법률이다.",
+    "chapters": [
+      {
+        "chapterTitle": "제1장 총칙",
+        "articles": [
+          {
+            "articleNo": "제1조",
+            "title": "목적",
+            "content": "이 법은 수상레저활동의 안전과 질서를 확보하고 수상레저사업의 건전한 발전을 도모함을 목적으로 한다."
+          },
+          {
+            "articleNo": "제2조",
+            "title": "정의",
+            "content": "이 법에서 사용하는 \"수상레저기구\"란 수상레저활동에 이용되는 모터보트, 세일링요트, 수상오토바이, 고무보트 등을 말한다."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rule-001",
+    "category": "rule",
+    "subType": "훈령",
+    "title": "해양경찰청 당직근무 규칙",
+    "shortTitle": "당직규칙",
+    "enforceDate": "2026. 03. 01.",
+    "promulgationNo": "해양경찰청훈령 제542호",
+    "promulgationDate": "2026. 02. 25.",
+    "department": "해양경찰청 (운영지원과), 032-835-2122",
+    "revisionType": "일부개정",
+    "originalFile": "해양경찰청_당직근무규칙.pdf",
+    "description": "해양경찰청 및 소속기관의 24시간 상황대응체제 및 당직근무에 관한 제반 사항을 규정한다.",
+    "chapters": [
+      {
+        "chapterTitle": "제1장 총칙",
+        "articles": [
+          {
+            "articleNo": "제1조",
+            "title": "목적",
+            "content": "이 규칙은 「국가공무원 복무규정」 제5조에 따라 해양경찰청과 그 소속기관의 당직근무에 관한 사항을 규정함을 목적으로 한다."
+          },
+          {
+            "articleNo": "제2조",
+            "title": "당직의 구분",
+            "content": "당직은 일직과 숙직으로 구분하되, 종합상황실 근무는 24시간 교대근무체제로 운영한다."
+          }
+        ]
+      },
+      {
+        "chapterTitle": "제2장 긴급상황 보고",
+        "articles": [
+          {
+            "articleNo": "제3조",
+            "title": "긴급상황 발생 시 조치",
+            "content": "당직책임관은 해양사고, 불법조업 등 긴급상황 발생 시 즉시 상황을 전파하고 청장 및 차장에게 직보하여야 한다."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rule-002",
+    "category": "rule",
+    "subType": "예규",
+    "title": "해양경찰 수색구조 기술규칙",
+    "shortTitle": "수색구조규칙",
+    "enforceDate": "2026. 04. 10.",
+    "promulgationNo": "해양경찰청예규 제219호",
+    "promulgationDate": "2026. 04. 01.",
+    "department": "해양경찰청 (수색구조과), 032-835-2441",
+    "revisionType": "전부개정",
+    "originalFile": "해양경찰_수색구조_기술규칙.pdf",
+    "description": "해상 수난구호 및 조난선박 수색구조 시 표준 기술 및 절차를 규정한다.",
+    "chapters": [
+      {
+        "chapterTitle": "제1장 총칙",
+        "articles": [
+          {
+            "articleNo": "제1조",
+            "title": "목적",
+            "content": "이 규칙은 「수상에서의 수색·구조 등에 관한 법률」에 따라 수색구조활동에 필요한 과학적 탐색기법과 구조기술의 표준을 정함을 목적으로 한다."
+          },
+          {
+            "articleNo": "제2조",
+            "title": "수색구역의 산정",
+            "content": "수색조정관은 조류, 풍향, 표류예측시스템(EDAS)의 결과를 종합하여 최적의 수색구역을 결정하여야 한다."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rule-003",
+    "category": "rule",
+    "subType": "고시",
+    "title": "연안체험활동 안전수칙 고시",
+    "shortTitle": "연안체험안전고시",
+    "enforceDate": "2026. 07. 01.",
+    "promulgationNo": "해양경찰청고시 제2026-12호",
+    "promulgationDate": "2026. 06. 20.",
+    "department": "해양경찰청 (해양안전과), 032-835-2345",
+    "revisionType": "제정",
+    "originalFile": "연안체험활동_안전수칙_고시.pdf",
+    "description": "연안사고 예방을 위해 연안체험활동 참가자 및 운영자가 준수하여야 할 안전수칙을 정한다.",
+    "chapters": [
+      {
+        "chapterTitle": "제1장 총칙",
+        "articles": [
+          {
+            "articleNo": "제1조",
+            "title": "목적",
+            "content": "이 고시는 「연안사고 예방에 관한 법률」 제12조에 따라 연안체험활동의 안전 확보를 위해 필요한 세부 안전수칙을 규정함을 목적으로 한다."
+          },
+          {
+            "articleNo": "제2조",
+            "title": "구명조끼 착용 의무",
+            "content": "연안체험활동에 참가하는 모든 인원은 체험활동 중 구명조끼를 항시 착용하여야 한다."
+          }
+        ]
+      }
+    ]
+  }
+]

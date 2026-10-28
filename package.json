@@ -1,0 +1,18 @@
+{
+  "name": "kcg-law-center",
+  "version": "1.0.0",
+  "description": "해양경찰 법령정보센터 로컬 웹 애플리케이션 (Zero-Dependency)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "coast-guard",
+    "law",
+    "kcg"
+  ],
+  "author": "Korea Coast Guard IT",
+  "license": "ISC"
+}
+

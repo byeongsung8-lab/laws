@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>해양경찰 법령정보센터 - 목록 및 검색</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- 상단 유틸리티 바 -->
+  <aside class="top-utility-bar">
+    <div class="top-utility-inner">
+      <div class="top-utility-left">
+        <span>🌊 대한민국 해양경찰청 로컬 법령정보 포털</span>
+      </div>
+      <div class="top-utility-right">
+        <a href="/" style="font-weight: bold; color: var(--color-forest);">🏠 홈 화면으로 돌아가기</a>
+        <a href="/admin.html">📁 관리자 수동 업로드</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 메인 헤더 & 로고 영역 -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="brand-logo" title="홈으로 이동">
+        <div class="brand-emblem">⚓</div>
+        <div class="brand-text-wrap">
+          <span class="brand-sub">KOREA COAST GUARD</span>
+          <span class="brand-title">해양경찰 법령정보센터</span>
+        </div>
+      </a>
+      <div class="header-actions">
+        <a href="/" class="tool-btn" style="background-color: var(--color-forest); color: white;">
+          <span>🏠</span> 홈으로 돌아가기
+        </a>
+        <a href="/admin.html" class="btn-admin">
+          <span>📁</span> 신규 파일 업로드
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- GNB 네비게이션 바 -->
+  <nav class="gnb-nav">
+    <div class="gnb-inner">
+      <a href="/" class="gnb-home-btn" title="홈 화면으로">🏠 홈</a>
+      <ul class="gnb-menu">
+        <li class="gnb-item" id="menuLaw">
+          <a href="/list.html?category=law">법령 (법률·대통령령·부령)</a>
+        </li>
+        <li class="gnb-item" id="menuRule">
+          <a href="/list.html?category=rule">행정규칙 (훈령·예규·고시)</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 목록 컨테이너 -->
+  <div class="list-container">
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-bar">
+      <a href="/">홈</a>
+      <span>&gt;</span>
+      <span id="breadcrumbCategory">법령 목록</span>
+      <span id="breadcrumbKeyword"></span>
+    </div>
+
+    <!-- 타이틀 바 -->
+    <div class="page-title-box">
+      <div>
+        <h2 class="page-title" id="pageTitle">법령 목록</h2>
+        <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">
+          원하시는 항목을 클릭하시면 <strong>새 창(뷰어)</strong>으로 상세 본문이 열립니다.
+        </div>
+      </div>
+      <div class="page-stats">
+        총 검색 결과: <strong id="resultCount">0</strong>건
+      </div>
+    </div>
+
+    <!-- 필터 & 재검색 툴바 -->
+    <div class="filter-toolbar">
+      <div class="filter-chips" id="filterChips">
+        <button class="chip-btn active" onclick="setSubTypeFilter('all', this)">전체</button>
+        <button class="chip-btn" onclick="setSubTypeFilter('법률', this)">법률</button>
+        <button class="chip-btn" onclick="setSubTypeFilter('대통령령', this)">대통령령</button>
+        <button class="chip-btn" onclick="setSubTypeFilter('훈령', this)">훈령</button>
+        <button class="chip-btn" onclick="setSubTypeFilter('예규', this)">예규</button>
+        <button class="chip-btn" onclick="setSubTypeFilter('고시', this)">고시</button>
+      </div>
+
+      <!-- 목록 내 간이 검색창 -->
+      <form style="display: flex; gap: 6px;" onsubmit="handleListSearch(event)">
+        <input 
+          type="text" 
+          id="listKeywordInput" 
+          class="form-control" 
+          placeholder="결과 내 검색..." 
+          style="width: 240px; padding: 6px 12px; font-size: 13px;"
+        />
+        <button type="submit" class="tool-btn" style="background: var(--color-gold); color: #111; font-weight: bold;">
+          검색
+        </button>
+      </form>
+    </div>
+
+    <!-- 법령 결과 테이블 -->
+    <table class="law-table">
+      <thead>
+        <tr>
+          <th style="width: 80px; text-align: center;">번호</th>
+          <th style="width: 110px;">구분</th>
+          <th>법령 및 행정규칙명</th>
+          <th style="width: 170px;">소관부서</th>
+          <th style="width: 130px;">시행일자</th>
+          <th style="width: 160px; text-align: center;">상세열람 / 원본파일</th>
+        </tr>
+      </thead>
+      <tbody id="lawTableBody">
+        <tr>
+          <td colspan="6" style="text-align: center; padding: 40px; color: var(--text-muted);">
+            데이터를 불러오는 중입니다...
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-info">
+        <div class="footer-logo">해양경찰 법령정보센터 (로컬 전용)</div>
+        <p>인천광역시 연수구 해돋이로 130 해양경찰청 | 로컬 전산망 독립 운영 버전</p>
+      </div>
+      <div>
+        <a href="/" style="color: var(--color-gold); font-weight: bold; margin-right: 16px;">🏠 홈으로 이동</a>
+        <a href="/admin.html" style="color: #FFFFFF;">관리자 업로드</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/list.js"></script>
+</body>
+</html>
+

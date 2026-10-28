@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>해양경찰 법령정보 상세 뷰어</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    /* 하이라이트 스타일 */
+    mark.highlight {
+      background-color: var(--color-gold);
+      color: #000;
+      padding: 0 2px;
+      border-radius: 2px;
+    }
+    .print-only {
+      display: none;
+    }
+    @media print {
+      .viewer-sidebar, .viewer-top-bar, .viewer-meta-box {
+        display: none !important;
+      }
+      .viewer-layout {
+        height: auto;
+        overflow: visible;
+      }
+      .viewer-scroll-body {
+        overflow: visible;
+        padding: 0;
+      }
+      .print-only {
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body style="overflow: hidden;">
+  <div class="viewer-layout">
+    <!-- 좌측 사이드바: 조문 목차 트리 (첨부2 좌측 패널) -->
+    <aside class="viewer-sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-title">📑 조문 목차</span>
+        <span id="articleCountBadge" style="font-size: 11px; background: rgba(255,255,255,0.25); padding: 2px 6px; border-radius: 10px;">0개 조문</span>
+      </div>
+      <div class="tree-container" id="treeContainer">
+        <!-- 동적으로 장 및 조문 트리 렌더링 -->
+        <div style="padding: 20px; text-align: center; color: var(--text-muted); font-size: 13px;">
+          조문 목차를 구성 중입니다...
+        </div>
+      </div>
+    </aside>
+
+    <!-- 우측 메인 영역: 헤더 + 메타 + 조문 본문 (첨부2 우측 패널) -->
+    <main class="viewer-main-content">
+      <!-- 뷰어 상단 바 -->
+      <header class="viewer-top-bar">
+        <div class="viewer-law-title">
+          <span style="font-size: 22px;">⚖️</span>
+          <span id="lawTitleText">법령명 불러오는 중...</span>
+          <span class="badge-tag tag-law" id="lawTypeBadge">대통령령</span>
+        </div>
+        <div class="viewer-toolbar">
+          <button type="button" class="tool-btn" onclick="toggleSearchInput()">
+            <span>🔍</span> 화면내검색
+          </button>
+          <button type="button" class="tool-btn" onclick="window.print()">
+            <span>🖨️</span> 인쇄
+          </button>
+          <a id="btnDownloadOriginal" href="javascript:void(0);" class="tool-btn" style="display: none;">
+            <span>💾</span> 원본 다운로드
+          </a>
+          <button type="button" class="tool-btn" onclick="window.close()" style="color: var(--color-terracotta);">
+            <span>✖</span> 닫기
+          </button>
+        </div>
+      </header>
+
+      <!-- 화면내 검색 바 (토글) -->
+      <div id="inlineSearchBox" style="display: none; padding: 10px 24px; background: #FFF9E6; border-bottom: 1px solid var(--border-color); align-items: center; gap: 10px;">
+        <span style="font-size: 13px; font-weight: bold; color: var(--color-forest);">본문 내 검색:</span>
+        <input 
+          type="text" 
+          id="inlineSearchInput" 
+          placeholder="찾을 단어 입력 후 Enter" 
+          class="form-control" 
+          style="width: 260px; padding: 4px 10px; font-size: 13px;"
+          onkeydown="if(event.key==='Enter') doInlineSearch()"
+        />
+        <button type="button" class="tool-btn" onclick="doInlineSearch()">검색</button>
+        <span id="searchMatchCount" style="font-size: 12px; color: var(--text-secondary);"></span>
+      </div>
+
+      <!-- 메타정보 박스 (시행일자, 공포번호, 부서 등) -->
+      <div class="viewer-meta-box" id="metaBox">
+        <div class="meta-item">[시행 <span id="metaEnforceDate">-</span>]</div>
+        <div class="meta-item">[<span id="metaPromulgationNo">-</span>, <span id="metaPromulgationDate">-</span>, <span id="metaRevisionType">-</span>]</div>
+        <div class="meta-item"><strong>소관부처:</strong> <span id="metaDepartment">-</span></div>
+      </div>
+
+      <!-- 조문 본문 스크롤 영역 -->
+      <section class="viewer-scroll-body" id="articleBodyContainer">
+        <div style="text-align: center; padding: 60px; color: var(--text-muted);">
+          본문 데이터를 불러오는 중입니다...
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/js/view.js"></script>
+</body>
+</html>
+
